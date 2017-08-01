@@ -1,0 +1,36 @@
+$green: rgb(1, 210, 119);
+$grey: rgb(8, 28, 36);
+.movie-item{
+  border: 1px solid $grey;
+  margin-bottom: 3px !important;
+  margin-left: 3px;
+  border-radius: 3px;
+}
+.active-movie{
+  border: 3px solid $green !important;
+}
+a.button {
+  cursor: pointer;
+  display: inline-block;
+  font: normal normal 300 1.3em 'Open Sans';
+  text-decoration: none;
+  color: $green;
+  background-color: transparent;
+  border: 1px solid $green;
+  border-radius: 100px;
+  padding: .3em 1.2em;
+  margin: 5px;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, $green 50%);
+  transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, color 0.5s ease 0s, background-color 0.5s ease;
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: $green;
+    background-position: -100% 100%;
+  }
+}
+@media screen and (max-width: 990px) {
+    .movie-item{
+      margin-left: 15px;
+    }
+}

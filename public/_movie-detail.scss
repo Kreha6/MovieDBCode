@@ -1,0 +1,31 @@
+$green: rgb(1, 210,119);
+.movie-link{
+  color:$green;
+  font-weight: bold;
+}
+.hint{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .hint-arrow {
+      font-size: 50px;
+      color:$green;
+      margin-left: 40%;
+  }
+}
+.movie-detail{
+  position:fixed;
+}
+@media screen and (max-width: 990px) {
+    .hint{
+      position:relative;
+    }
+    .movie-detail{
+      position:relative;
+    }
+}
+.poster{
+  display:block;
+  margin:auto;
+}

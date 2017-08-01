@@ -1,0 +1,23 @@
+@import '_search-bar';
+@import '_movie-list';
+@import '_movie-list-item';
+@import '_movie-detail';
+body {
+  overflow-x: hidden;
+}
+#scroll {
+    font-size: 50px;
+    color:rgb(1, 210, 119);
+    cursor: pointer;
+    position: fixed;
+    top:85%;
+    right:5%;
+    display: none;
+    z-index: 100;
+}
+@media screen and (min-width: 990px) {
+    #scroll{
+      top:90%;
+      right:2%;
+    }
+}

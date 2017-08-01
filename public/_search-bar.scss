@@ -1,0 +1,28 @@
+$green: rgb(1, 210,119);
+$light-green: rgb(52, 255, 170);
+.search-bar{
+  margin:1% 20% 1% 1%;
+  text-align: center;
+  input {
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px $green;
+    width: 60%;
+    &:focus{
+      outline: none;
+    }
+  }
+  button{
+    margin: 5px;
+  }
+  #sort{
+    margin-left:5% !important;
+  }
+}
+@media screen and (max-width: 990px) {
+    .search-bar{
+      margin: 1%;
+    }
+}

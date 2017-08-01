@@ -1,0 +1,111 @@
+.search-bar {
+  margin: 1% 20% 1% 1%;
+  text-align: center; }
+  .search-bar input {
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px #01d277;
+    width: 60%; }
+    .search-bar input:focus {
+      outline: none; }
+  .search-bar button {
+    margin: 5px; }
+  .search-bar #sort {
+    margin-left: 5% !important; }
+
+@media screen and (max-width: 990px) {
+  .search-bar {
+    margin: 1%; } }
+
+.empty-result {
+  margin-top: 100px;
+  margin-left: 10px;
+  text-align: center; }
+
+.hint-sm {
+  display: relative; }
+  .hint-sm .hint-arrow {
+    font-size: 50px;
+    color: #01d277; }
+
+.sort-button {
+  margin: 10% 0 10% 0; }
+
+.movie-item {
+  border: 1px solid #081c24;
+  margin-bottom: 3px !important;
+  margin-left: 3px;
+  border-radius: 3px; }
+
+.active-movie {
+  border: 3px solid #01d277 !important; }
+
+a.button {
+  cursor: pointer;
+  display: inline-block;
+  font: normal normal 300 1.3em 'Open Sans';
+  text-decoration: none;
+  color: #01d277;
+  background-color: transparent;
+  border: 1px solid #01d277;
+  border-radius: 100px;
+  padding: .3em 1.2em;
+  margin: 5px;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, #01d277 50%);
+  transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, color 0.5s ease 0s, background-color 0.5s ease; }
+  a.button:hover {
+    color: white;
+    background-color: #01d277;
+    background-position: -100% 100%; }
+
+@media screen and (max-width: 990px) {
+  .movie-item {
+    margin-left: 15px; } }
+
+.movie-link {
+  color: #01d277;
+  font-weight: bold; }
+
+.hint {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  .hint .hint-arrow {
+    font-size: 50px;
+    color: #01d277;
+    margin-left: 40%; }
+
+.movie-detail {
+  position: fixed; }
+
+@media screen and (max-width: 990px) {
+  .hint {
+    position: relative; }
+  .movie-detail {
+    position: relative; } }
+
+.poster {
+  display: block;
+  margin: auto; }
+
+body {
+  overflow-x: hidden; }
+
+#scroll {
+  font-size: 50px;
+  color: #01d277;
+  cursor: pointer;
+  position: fixed;
+  top: 85%;
+  right: 5%;
+  display: none;
+  z-index: 100; }
+
+@media screen and (min-width: 990px) {
+  #scroll {
+    top: 90%;
+    right: 2%; } }

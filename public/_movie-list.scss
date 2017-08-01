@@ -1,0 +1,15 @@
+.empty-result{
+  margin-top: 100px;
+  margin-left: 10px;
+  text-align: center;
+}
+.hint-sm{
+  display: relative;
+  .hint-arrow {
+      font-size: 50px;
+      color:$green;
+  }
+}
+.sort-button{
+  margin:10% 0 10% 0;
+}
